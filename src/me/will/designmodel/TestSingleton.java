@@ -59,9 +59,9 @@ public class TestSingleton {
         INSTANCE;
         private Singleton singleton;
         //JVM会保证此方法绝对只调用一次
-        private Singleton(){
-            singleton = new Singleton();
-        }
+//        private Singleton(){
+//            singleton = new Singleton();
+//        }
         public Singleton getInstance(){
             return singleton;
         }
