@@ -51,20 +51,4 @@ public class TestSingleton {
         return Holder.singleton;
     }
 
-
-    /**
-     * 方式3：使用枚举
-     */
-    public enum Singleton {
-        INSTANCE;
-        private Singleton singleton;
-        //JVM会保证此方法绝对只调用一次
-//        private Singleton(){
-//            singleton = new Singleton();
-//        }
-        public Singleton getInstance(){
-            return singleton;
-        }
-    }
-
 }
