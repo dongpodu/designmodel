@@ -11,7 +11,7 @@ public class TestSimpleFactory {
 
     }
 
-    public static class CarFactory implements Car{
+    public static class CarFactory{
         public static Car createCar(String type){
             if("audi".equalsIgnoreCase(type)){
                 return new Audi();
